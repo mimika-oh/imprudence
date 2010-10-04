@@ -61,7 +61,7 @@ if (${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
   # Incorporated settings from
   # http://imprudenceviewer.org/w/index.php?title=How_to_compile&oldid=1647#Mac
   # so that people don't have to set them every time they run develop.py
-  set(CMAKE_OSX_SYSROOT "/Developer/SDKs/MacOSX10.6.sdk")
+  set(CMAKE_OSX_SYSROOT "/Developer/SDKs/MacOSX10.5.sdk")
   set(CMAKE_XCODE_ATTRIBUTE_GCC_VERSION	"4.0")
   set(CMAKE_XCODE_ATTRIBUTE_ARCHS '$(ARCHS_STANDARD_32_BIT)')
   set(CMAKE_XCODE_ATTRIBUTE_VALID_ARCHS "i386 ppc")
