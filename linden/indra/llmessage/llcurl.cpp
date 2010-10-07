@@ -1003,9 +1003,10 @@ void LLCurl::ssl_locking_callback(int mode, int type, const char *file, int line
 }
 
 //static
-unsigned long LLCurl::ssl_thread_id(void)
+long unsigned int LLCurl::ssl_thread_id(void)
 {
-	return LLThread::currentID();
+    assert(sizeof(long unsigned int) >= sizeof(LLThread::thread_id_t));
+	return (long unsigned int)LLThread::currentID();
 }
 #endif
 

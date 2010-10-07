@@ -47,6 +47,7 @@
 #include "llbuffer.h"
 #include "lliopipe.h"
 #include "llsd.h"
+#include "llthread.h"
 
 class LLMutex;
 
@@ -209,7 +210,7 @@ private:
 	curlmulti_set_t mMultiSet;
 	LLCurl::Multi* mActiveMulti;
 	S32 mActiveRequestCount;
-	U32 mThreadID; // debug
+    LLThread::thread_id_t mThreadID; // debug
 };
 
 class LLCurlEasyRequest

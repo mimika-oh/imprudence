@@ -232,9 +232,9 @@ void LLThread::setQuitting()
 }
 
 // static
-U32 LLThread::currentID()
+LLThread::thread_id_t LLThread::currentID()
 {
-	return (U32)apr_os_thread_current();
+	return (LLThread::thread_id_t)apr_os_thread_current();
 }
 
 // static

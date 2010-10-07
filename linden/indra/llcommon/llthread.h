@@ -59,8 +59,9 @@ public:
 	
 	bool isQuitting() const { return (QUITTING == mStatus); }
 	bool isStopped() const { return (STOPPED == mStatus); }
-	
-	static U32 currentID(); // Return ID of current thread
+
+    typedef struct thread_id_s *thread_id_t;
+	static thread_id_t currentID(); // Return ID of current thread
 	static void yield(); // Static because it can be called by the main thread, which doesn't have an LLThread data structure.
 	
 public:
