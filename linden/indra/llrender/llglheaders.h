@@ -683,7 +683,8 @@ extern PFNGLDRAWBUFFERSARBPROC glDrawBuffersARB;
 #define GL_EXT_separate_specular_color 1
 #include <OpenGL/glext.h>
 
-#include "GL/glh_extensions.h"
+//#include "GL/glh_extensions.h"
+#include "glh_extensions.h"
 
 // These symbols don't exist on 10.3.9, so they have to be declared weak.  Redeclaring them here fixes the problem.
 // Note that they also must not be called on 10.3.9.  This should be taken care of by a runtime check for the existence of the GL extension.

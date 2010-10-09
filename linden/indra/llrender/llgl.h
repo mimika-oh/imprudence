@@ -47,7 +47,8 @@
 #include "llgltypes.h"
 
 #include "llglheaders.h"
-#include "glh/glh_linear.h"
+//#include "glh/glh_linear.h"
+#include "glh_linear.h"
 
 extern BOOL gDebugGL;
 
